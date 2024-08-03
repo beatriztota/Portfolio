@@ -1,0 +1,17 @@
+#footer {
+  background-color: #444;
+    padding: 1.5rem 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box; 
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  

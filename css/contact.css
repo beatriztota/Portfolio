@@ -1,0 +1,82 @@
+#contato {
+  padding: 10rem 1rem;
+  color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  justify-content: center; 
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 100px;
+  background-color: #444;
+  border-radius: 1rem;
+  color: #f3f3f3;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 2rem;
+}
+
+.contact-link:hover {
+  background-color: #6e40c9;
+  color: #fff;
+}
+
+.email-link {
+  width: 18.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-text {
+  text-align: right; 
+}
+
+.contact-text h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-text h1 span {
+  color: #6e40c9;
+}
+
+.contact-text p {
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 0;
+  line-height: 0.6;
+}
+
+.contact-text p span::after {
+  content: "\A";
+  white-space: pre;
+  display: block;
+}
+
+.contact-text span {
+  color: #6e40c9;
+}

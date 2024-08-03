@@ -1,0 +1,122 @@
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 30% center;
+  z-index: -1;
+  opacity: 3;
+}
+
+.home {
+  padding-top: 25rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.home-container {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home h2 > span {
+  color: #6e40c9;
+}
+
+
+.informacoes {
+  display: grid;
+  gap: 16px;
+}
+
+.efeito-texto {
+  font-size: 2rem;
+}
+
+.efeito-texto::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.5s infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-projetos,
+.btn-sobre {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 25px;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-projetos {
+  border: 2px solid #6e40c9;
+}
+
+.btn-projetos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #6e40c9;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.btn-projetos:hover:before {
+  width: 100%;
+}
+
+.btn-sobre {
+  border: 2px solid #6e40c9;
+}
+
+.btn-sobre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #6e40c9;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.btn-sobre:hover:before {
+  width: 100%;
+}

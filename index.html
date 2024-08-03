@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Beatriz - Desenvolvedora Front-End</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/habilidades.css" />
+    <link rel="stylesheet" href="./css/projetos.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <meta
+      name="description"
+      content="Portfólio de uma desenvolvedora Front-End mostrando os principais conhecimentos e projetos feitos."
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/Black___White-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <script type="module" src="./js/Habilities.js" defer></script>
+    <script type="module" src="./js/Typer.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img//Black___White-removebg-preview.png" />
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="home">
+      <img class="background-img" src="img/background-codelines.svg" alt="" />
+      <div class="home-container">
+        <div class="informacoes">
+          <h2>Olá, eu sou a <span>Beatriz!</span></h2>
+          <h1 class="efeito-texto"></h1>
+          <div class="btn-container">
+            <a class="btn-projetos" href="#projetos">
+              <span>Ver meus projetos</span>
+            </a>
+            <a class="btn-sobre" href="#contato">
+              <span>Contato</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+      <div class="habilidades-header">
+        <h1 class="habilidades-titulo">
+          Minhas <br />
+          <span>Habilidades</span>.
+        </h1>
+        <p class="habilidades-description">
+          Ao lado estão as <span>tecnologias</span> e <br />
+          <span>frameworks</span> que possuo habilidades <br />
+          e conhecimentos.
+        </p>
+      </div>
+      <div class="habilidades-container">
+        <div class="habilidade">
+          <img src="img/html (1).svg" alt="HTML" />
+        </div>
+        <div class="habilidade">
+          <img src="img/css (1).svg" alt="CSS" />
+        </div>
+        <div class="habilidade">
+          <img src="img/javascript (1).svg" alt="JavaScript" />
+        </div>
+        <div class="habilidade">
+          <img src="img/typescript.svg" alt="TypeScript" />
+        </div>
+        <div class="habilidade">
+          <img src="img/react (1).svg" alt="React" />
+        </div>
+      </div>
+    </section>
+    <section id="projetos" class="projetos">
+      <h1 class="projetos-titulo">Meus <span>Projetos</span>.</h1>
+      <p class="description">Abaixo estão meus projetos favoritos.</p>
+      <div class="grid-container">
+        <div class="projeto-card">
+          <img
+            src="img/e-shop.PNG"
+            alt="E-Shop"
+            onclick="window.open('https://e-shop-ruddy.vercel.app/', '_blank')"
+          />
+          <div class="projeto-info">
+            <h4 class="projeto-titulo">E-Shop</h4>
+            <p class="projeto-descricao">
+              E-Shop é uma aplicação de e-commerce que utiliza a API do Stripe.
+            </p>
+            <div class="tecnologias">
+              <img src="img/react (1).svg" alt="React.js" />
+            </div>
+            <div class="link-container">
+              <a
+                href="https://github.com/beatriztota/E-Shop"
+                class="link-repo"
+                target="_blank"
+                aria-label="Ver Repositório no GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://e-shop-ruddy.vercel.app/"
+                class="link-web"
+                target="_blank"
+                aria-label="Ver na Web"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <img
+            src="img/TeslaBank.PNG"
+            alt="Projeto TeslaBank"
+            onclick="window.open('https://beatriztota.github.io/Tesla-bank/', '_blank')"
+          />
+          <div class="projeto-info">
+            <h4 class="projeto-titulo">TeslaBank</h4>
+            <p class="projeto-descricao">
+              TeslaBank é uma landing page de serviços bancários.
+            </p>
+            <div class="tecnologias">
+              <img src="img/html (1).svg" alt="HTML" />
+              <img src="img/css (1).svg" alt="CSS" />
+              <img src="img/javascript (1).svg" alt="JavaScript" />
+            </div>
+            <div class="link-container">
+              <a
+                href="https://github.com/beatriztota/Tesla-bank"
+                class="link-repo"
+                target="_blank"
+                aria-label="Ver Repositório no GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://beatriztota.github.io/Tesla-bank/"
+                class="link-web"
+                target="_blank"
+                aria-label="Ver na Web"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <img
+            src="img/github-finder.PNG"
+            alt="Projeto GitHub Finder"
+            onclick="window.open('https://github-finder-tan-rho.vercel.app/', '_blank')"
+          />
+          <div class="projeto-info">
+            <h4 class="projeto-titulo">GitHub Finder</h4>
+            <p class="projeto-descricao">
+              GitHub Finder utiliza a API do GitHub e permite pesquisar perfis e
+              visualizar seus repositórios.
+            </p>
+            <div class="tecnologias">
+              <img src="img/typescript.svg" alt="TypeScript" />
+              <img src="img/react (1).svg" alt="React.js" />
+            </div>
+            <div class="link-container">
+              <a
+                href="https://github.com/beatriztota/Github-Finder"
+                class="link-repo"
+                target="_blank"
+                aria-label="Ver Repositório no GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://github-finder-tan-rho.vercel.app/"
+                class="link-web"
+                target="_blank"
+                aria-label="Ver na Web"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="contact-content">
+        <div class="contact-links">
+          <div class="social-links">
+            <a
+              href="https://github.com/beatriztota"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/beatriztota/"
+              class="contact-link"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <a
+            href="mailto:beatrizttaa@gmail.com"
+            class="contact-link email-link"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <div class="contact-text">
+          <h1>
+            Venha me <span><br />Contatar.</span>
+          </h1>
+          <p>
+            Oi de novo! Vou deixar algumas <span>redes</span> sociais para me
+            contatar quando quiser.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; 2024 Beatriz Tota Gongora.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
