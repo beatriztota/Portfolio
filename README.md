@@ -2,9 +2,6 @@
 
 Bem-vindo ao meu portfólio! Este repositório contém o código-fonte para o meu portfólio online, onde você pode ver alguns dos meus projetos e aprender mais sobre mim.
 
-## Descrição
-
-Este portfólio foi criado para mostrar minhas habilidades como desenvolvedora Front-end.
 
 ## Tecnologias Utilizadas
 
