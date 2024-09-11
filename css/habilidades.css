@@ -10,6 +10,7 @@
   margin: 10rem;
   display: flex;
   justify-content: space-between; 
+  align-items: flex-start; 
 }
 
 .habilidades-header {
@@ -20,7 +21,7 @@
 .habilidades-titulo {
   font-size: 3.5rem;
   color: #f3f3f3;
-  margin-left: 20rem;
+  margin-left: 8rem; 
 }
 
 .habilidades-titulo span {
@@ -30,8 +31,7 @@
 .habilidades-description {
   font-size: 20px;
   color: #ccc;
-  margin-left: 20rem;
-
+  margin-left: 8rem; 
 }
 
 .habilidades-description span {
@@ -39,12 +39,12 @@
 }
 
 .habilidades-container {
-  width: 27%; 
+  width: 40%; 
   display: grid;
-  grid-template-columns: repeat(3, 2fr); 
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
-  align-items: start; 
-  margin-right: 20rem;
+  margin-right: 8rem;
+  align-items: start;
 }
 
 .habilidade {
@@ -56,14 +56,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px; 
+  height: 120px;
 }
 
 .habilidade:hover {
-  transform: translateY(-5px); /
+  transform: translateY(-5px); 
 }
 
 .habilidade img {
-  width: 60px; 
-  height: 60px; 
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 1200px) {
+  .habilidades {
+    flex-wrap: wrap; 
+    margin: 5rem 1rem; 
+    justify-content: center;  
+  }
+
+  .habilidades-header {
+    width: 100%; 
+    margin-bottom: 2rem;
+    text-align: center; 
+  }
+
+  .habilidades-titulo {
+    margin-left: 0; 
+    font-size: 2.5rem;
+  }
+
+  .habilidades-description {
+    margin-left: 0; 
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .habilidades-container {
+    width: 100%;
+    margin-right: 0;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .habilidade {
+    height: auto;
+    padding: 10px;
+  }
+
+  .habilidade img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .habilidades {
+    flex-direction: column;
+  }
+
+  .habilidades-container {
+    grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
+  }
 }
