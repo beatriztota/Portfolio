@@ -7,25 +7,24 @@
   position: fixed;
   width: 100%;
   background-color: #111;
-  margin: 0 auto; 
-  z-index: 100; 
+  z-index: 100;
 }
 
 .logo {
   height: 90px; 
   width: auto;
-  margin-left: 20rem; 
+  margin-left: 2rem; 
 }
 
 .nav {
   display: flex;
   align-items: center;
-  margin-right: 15rem; 
+  margin-right: 2rem; 
 }
 
 .menu {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .menu li {
@@ -38,15 +37,100 @@
   padding: 10px 20px;
   border-bottom: 2px solid transparent;
   transition: color 0.2s, border-bottom 0.2s;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .menu li a:hover {
   color: #6e40c9;
-  border-bottom: 2px solid #6e40c9; 
+  border-bottom: 2px solid #6e40c9;
 }
 
 .menu li a.active {
   color: #6e40c9;
-  border-bottom: 2px solid #6e40c9; 
+  border-bottom: 2px solid #6e40c9;
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 600px) {
+  .logo {
+    height: 60px;
+    margin-left: 1rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+  }
+
+  .nav-mobile {
+    display: none;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-mobile.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-mobile li {
+    margin: 0;
+  }
+
+  .menu-mobile li a {
+    padding: 15px;
+    color: #f3f3f3;
+    text-decoration: none;
+  }
+
+  .menu-mobile li a:hover {
+    color: #6e40c9;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .logo {
+    height: 80px;
+    margin-left: 2rem;
+  }
+
+  .nav {
+    margin-right: 2rem;
+  }
+
+  .menu-toggle, .nav-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .logo {
+    height: 90px;
+    margin-left: 2rem;
+  }
+
+  .nav {
+    margin-right: 2rem;
+  }
+
+  .menu-toggle, .nav-mobile {
+    display: none;
+  }
 }

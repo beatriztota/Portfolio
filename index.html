@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/theme.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sobre.css" />
     <meta
       name="description"
       content="Portfólio de uma desenvolvedora Front-End mostrando os principais conhecimentos e projetos feitos."
@@ -24,6 +25,7 @@
     />
     <script type="module" src="./js/Habilities.js" defer></script>
     <script type="module" src="./js/Typer.js" defer></script>
+    <script type="module" src="./js/Nav.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -36,18 +38,38 @@
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="img//Black___White-removebg-preview.png" />
+      <img
+        class="logo"
+        src="img/Black___White-removebg-preview.png"
+        alt="Logo"
+      />
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav class="nav">
         <ul class="menu">
           <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <ul class="menu-mobile">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
         </ul>
       </nav>
     </header>
+
     <section id="home" class="home">
       <img class="background-img" src="img/background-codelines.svg" alt="" />
       <div class="home-container">
+        <div id="foto-beatriz">
+          <img src="img/beatriztota.jpeg" alt="beatriz tota gongora" />
+        </div>
         <div class="informacoes">
           <h2>Olá, eu sou a <span>Beatriz!</span></h2>
           <h1 class="efeito-texto"></h1>
@@ -63,11 +85,32 @@
       </div>
     </section>
 
+    <section id="sobre" class="sobre">
+      <div class="sobre-container">
+        <h1 class="sobre-titulo">
+          Sobre
+          <br />
+          <span>Mim</span>.
+        </h1>
+        <div class="sobre-texto">
+          <p class="sobre-text">
+            Sou estudante de Análise e Desenvolvimento de Sistemas,
+            desenvolvedora Front-End e técnica em Produção Multimídia. <br />
+            Meu interesse por desenvolvimento Front-End começou durante o curso
+            técnico, onde aprendi HTML, CSS e tive as primeiras noções sobre UX.
+            Desde então, tenho me dedicado a expandir meus conhecimentos, sempre
+            buscando aprender novas tecnologias e tendências do mercado.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="habilidades" class="habilidades">
       <div class="habilidades-header">
         <h1 class="habilidades-titulo">
-          Minhas  
-          <br/> <span>Habilidades</span>.
+          Minhas
+          <br />
+          <span>Habilidades</span>.
         </h1>
         <p class="habilidades-description">
           Ao lado estão as <span>tecnologias</span> e <br />
