@@ -115,6 +115,6 @@
   }
 
   .habilidades-container {
-    grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
+    grid-template-columns: 1fr; 
   }
 }
